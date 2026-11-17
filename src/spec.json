@@ -1,0 +1,284 @@
+{
+  "title": "Gestione prenotazioni sale",
+  "description": "Prototipo per consultare il calendario settimanale e gestire le prenotazioni delle sale riunioni con dati di fantasia.",
+  "accent": "indigo",
+  "pages": [
+    {
+      "id": "calendario-settimanale",
+      "title": "Calendario settimanale",
+      "description": "Panoramica delle prenotazioni per giorno, fascia oraria e sala. Usa la ricerca e i filtri per restringere la tabella.",
+      "metrics": [
+        {
+          "label": "Prenotazioni della settimana",
+          "value": "18"
+        },
+        {
+          "label": "Sale disponibili",
+          "value": "4"
+        },
+        {
+          "label": "Ore prenotate",
+          "value": "42"
+        },
+        {
+          "label": "Richieste da confermare",
+          "value": "3"
+        }
+      ],
+      "columns": [
+        "Giorno",
+        "Fascia oraria",
+        "Sala",
+        "Richiedente",
+        "Organizzazione",
+        "Partecipanti",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Lunedì",
+          "09:00–10:00",
+          "Lumo",
+          "Nubi",
+          "Circolo Vela",
+          "6",
+          "Confermata"
+        ],
+        [
+          "Lunedì",
+          "10:30–12:00",
+          "Vela",
+          "Rami",
+          "Officina Brina",
+          "8",
+          "Confermata"
+        ],
+        [
+          "Lunedì",
+          "14:00–15:00",
+          "Nubi",
+          "Soli",
+          "Rete Quercia",
+          "4",
+          "In attesa"
+        ],
+        [
+          "Martedì",
+          "09:30–11:00",
+          "Brina",
+          "Timo",
+          "Studio Rugiada",
+          "10",
+          "Confermata"
+        ],
+        [
+          "Martedì",
+          "11:30–12:30",
+          "Lumo",
+          "Mira",
+          "Gruppo Lanterna",
+          "5",
+          "Confermata"
+        ],
+        [
+          "Martedì",
+          "14:00–16:00",
+          "Vela",
+          "Leda",
+          "Cooperativa Gelsomino",
+          "12",
+          "In attesa"
+        ],
+        [
+          "Mercoledì",
+          "08:30–09:30",
+          "Nubi",
+          "Orla",
+          "Laboratorio Foschia",
+          "3",
+          "Confermata"
+        ],
+        [
+          "Mercoledì",
+          "10:00–11:30",
+          "Brina",
+          "Neri",
+          "Associazione Cobalto",
+          "7",
+          "Confermata"
+        ],
+        [
+          "Mercoledì",
+          "13:30–14:30",
+          "Lumo",
+          "Elda",
+          "Collettivo Marea",
+          "6",
+          "In attesa"
+        ],
+        [
+          "Giovedì",
+          "09:00–10:30",
+          "Vela",
+          "Ari",
+          "Rete Quercia",
+          "9",
+          "Confermata"
+        ],
+        [
+          "Giovedì",
+          "11:00–12:00",
+          "Nubi",
+          "Tavi",
+          "Officina Brina",
+          "4",
+          "Confermata"
+        ],
+        [
+          "Giovedì",
+          "14:30–16:00",
+          "Brina",
+          "Sira",
+          "Gruppo Lanterna",
+          "11",
+          "Confermata"
+        ],
+        [
+          "Venerdì",
+          "08:30–10:00",
+          "Lumo",
+          "Dori",
+          "Studio Rugiada",
+          "8",
+          "Confermata"
+        ],
+        [
+          "Venerdì",
+          "10:30–11:30",
+          "Vela",
+          "Nilo",
+          "Laboratorio Foschia",
+          "5",
+          "In attesa"
+        ],
+        [
+          "Venerdì",
+          "13:00–14:30",
+          "Nubi",
+          "Enea",
+          "Cooperativa Gelsomino",
+          "10",
+          "Confermata"
+        ]
+      ],
+      "form": [
+        "Giorno",
+        "Fascia oraria",
+        "Sala",
+        "Richiedente",
+        "Organizzazione",
+        "Partecipanti",
+        "Stato"
+      ]
+    },
+    {
+      "id": "nuova-prenotazione",
+      "title": "Nuova prenotazione",
+      "description": "Inserisci una richiesta di prenotazione. La disponibilità definitiva viene verificata nella gestione del calendario.",
+      "metrics": [
+        {
+          "label": "Sale configurate",
+          "value": "4"
+        },
+        {
+          "label": "Fasce prenotabili",
+          "value": "09:00–17:00"
+        }
+      ],
+      "columns": [
+        "Giorno",
+        "Fascia oraria",
+        "Sala",
+        "Richiedente",
+        "Organizzazione",
+        "Partecipanti",
+        "Stato"
+      ],
+      "rows": [],
+      "form": [
+        "Giorno",
+        "Fascia oraria",
+        "Sala",
+        "Richiedente",
+        "Organizzazione",
+        "Partecipanti",
+        "Stato"
+      ]
+    },
+    {
+      "id": "sale",
+      "title": "Sale riunioni",
+      "description": "Consulta capienza e dotazioni delle sale disponibili.",
+      "metrics": [
+        {
+          "label": "Sale attive",
+          "value": "4"
+        },
+        {
+          "label": "Capienza complessiva",
+          "value": "64"
+        }
+      ],
+      "columns": [
+        "Sala",
+        "Capienza",
+        "Dotazioni",
+        "Area",
+        "Disponibilità",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Lumo",
+          "12",
+          "Schermo, lavagna",
+          "Piano alba",
+          "Lun–Ven 09:00–17:00",
+          "Attiva"
+        ],
+        [
+          "Vela",
+          "20",
+          "Schermo, videoproiettore",
+          "Piano nuvola",
+          "Lun–Ven 09:00–17:00",
+          "Attiva"
+        ],
+        [
+          "Nubi",
+          "16",
+          "Lavagna, tavolo modulare",
+          "Piano alba",
+          "Lun–Ven 09:00–17:00",
+          "Attiva"
+        ],
+        [
+          "Brina",
+          "16",
+          "Schermo, lavagna, tavolo modulare",
+          "Piano marea",
+          "Lun–Ven 09:00–17:00",
+          "Attiva"
+        ]
+      ],
+      "form": [
+        "Sala",
+        "Capienza",
+        "Dotazioni",
+        "Area",
+        "Disponibilità",
+        "Stato"
+      ]
+    }
+  ]
+}
